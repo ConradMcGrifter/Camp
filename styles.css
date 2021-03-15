@@ -258,7 +258,7 @@ width:100%;
     opacity: 0;
     z-index: 0;
     /* change time back to 56 seconds to remove black screen at the end */
-    animation: imageAnimation 64s linear infinite; 
+    animation: imageAnimation 60s linear infinite; 
     display:flex;
     justify-content: center;
     
@@ -299,10 +299,6 @@ width:100%;
     animation-delay: 42s; 
 }
 
-.cb-slideshow li:nth-child(9) span { 
-    
-    animation-delay: 48s; 
-}
 
 
 
