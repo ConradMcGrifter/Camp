@@ -258,7 +258,7 @@ width:100%;
     opacity: 0;
     z-index: 0;
     /* change time back to 56 seconds to remove black screen at the end */
-    animation: imageAnimation 64s linear infinite; 
+    animation: imageAnimation 68s linear infinite; 
     display:flex;
     justify-content: center;
     
