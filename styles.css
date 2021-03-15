@@ -925,7 +925,7 @@ width:100%;
     .img-shrinker .close {
         transition: ease .3s;
         right:150px;
-        top:465px;
+        top:448px;
     }
 
       /*this gives the view images link more room at smaller screens */
@@ -975,7 +975,7 @@ width:100%;
      .img-shrinker .close {
         transition: ease .3s;
         right:120px;
-        top:400px;
+        top:373px;
     }
 
  }
