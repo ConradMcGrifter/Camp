@@ -924,8 +924,9 @@ width:100%;
     }
     .img-shrinker .close {
         transition: ease .3s;
-        right:150px;
-        top:448px;
+        right:0px;
+        top:0px;
+        border-radius:initial;
     }
 
       /*this gives the view images link more room at smaller screens */
@@ -959,8 +960,9 @@ width:100%;
 
     .img-shrinker .close {
         transition: ease .3s;
-        right:170px;
-        top:545px;
+        right:0px;
+        top:0px;
+        border-radius:initial;
     }
 
     .portfolio-lightbox__content {
@@ -990,8 +992,9 @@ width:100%;
 
      .img-shrinker .close {
         transition: ease .3s;
-        right:120px;
-        top:373px;
+        right:0px;
+        top:0px;
+        border-radius:initial;
     }
 
     .card--2019:hover {
