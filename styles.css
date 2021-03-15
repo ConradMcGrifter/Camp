@@ -258,14 +258,14 @@ width:100%;
     opacity: 0;
     z-index: 0;
   
-    animation: imageAnimation 48s linear infinite; 
+    animation: imageAnimation 50s linear infinite; 
     display:flex;
     justify-content: center;
     
 }
 
 .cb-slideshow li:nth-child(1) span { 
-    
+    animation-delay:0s; 
 }
 .cb-slideshow li:nth-child(2) span { 
     
