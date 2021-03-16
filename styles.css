@@ -61,6 +61,7 @@ body {
             1. HEADER
             
             2. LANDING PAGE
+                a.SLIDESHOW ANIMATION 
             
             3. CARDS
             
@@ -98,6 +99,8 @@ header {
     /* outline:solid blue 3px; */
 }
 
+
+/* this sets the nav link wrapper width on the main index header back to auto because there is only one link */
 .index-header {
     width:auto;
 }
@@ -123,6 +126,7 @@ header ul {
     display:flex;
     list-style:none;
     width:100%;
+    /* this tightens the nav link wrap so the links are closer */
     max-width:350px;
     justify-content: space-between;
     align-items: center;
@@ -130,7 +134,9 @@ header ul {
     
 }
 
-                     /* link stylings */
+                             /* *************
+                                link stylings
+                                ************* */
 
 li a {
     
@@ -259,11 +265,17 @@ width:100%;
     opacity: 0;
     z-index: 0;
   
-    animation: imageAnimation 40s linear infinite; 
+    animation: imageAnimation 36s linear infinite; 
     display:flex;
     justify-content: center;
     
 }
+
+
+
+                                          /*----------------------- 
+                                             a.SLIDESHOW ANIMATION 
+                                            -----------------------*/
 
 .cb-slideshow li:nth-child(1) span { 
     animation-delay:0s; 
@@ -301,15 +313,34 @@ width:100%;
 } */
 
 
-
-
 @keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+	    animation-timing-function: ease-in;
+	}
+	8% {
+	    opacity: 1;
+	    transform: scale(1.05);
+	}
+	17% {
+	    opacity: 1;
+	}
+	25% {
+	    opacity: 0;
+	    transform: scale(1.15);
+        animation-timing-function: ease-out;
+	}
+	100% { opacity: 0 }
+}
+
+
+/* @keyframes imageAnimation { 
     0% { opacity: 0; animation-timing-function: ease-in; }
     8% { opacity: 1; animation-timing-function: ease-out; }
     17% { opacity: 1 }
     25% { opacity: 0 }
     100% { opacity: 0 }
-}
+} */
 
 
                                                     /*==============
@@ -318,17 +349,28 @@ width:100%;
 
 /* this is the section that wraps .card-wrapper */
 #gallery {
-    height:90%;
+    height:90.5vh;
+    width:100%;
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items:center; 
     /* background:#00C9A9; */
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(15, 15, 15, 0.65)
+    ),
+    /* bottom, image */
+    url(/images/woodtable.jpg);
+
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center center;
+    background-repeat: no-repeat;
     background-color:var(--clr-bg);
-    position: relative;
+    position: relative;    
     
-    
-   
 }
 
 
@@ -371,6 +413,7 @@ width:100%;
     transition: transform .3s;
     width:300px; 
     margin:2em;
+    
     
  }
 
@@ -712,9 +755,8 @@ width:100%;
      
     
     header ul {
-        display:flex;
-        list-style:none;
-        
+      
+        /* this tightens the nav link wrap so the links are closer */
         width:100%;
         max-width:250px;
         justify-content: space-between;
@@ -807,23 +849,21 @@ width:100%;
     display:none;
 }
 
-.description-split h3 {
-    display:initial;
-}
+    .description-split h3 {
+        display:initial;
+    }
 
 
-.header-wrap {
-    justify-content:space-around;
-}
+    .header-wrap {
+        justify-content:space-around;
+    }
 
-.description-split {
-    padding-top:.5em;
-}
-
-
+    .description-split {
+        padding-top:.5em;
+    }
 
 
-   
+
 }  /* <----media query ends */
 
 
