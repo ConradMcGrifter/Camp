@@ -955,7 +955,7 @@ width:100%;
 
 @media only screen and (width:414px) {
     .img-shrinker {
-        width:400px;
+        width:375px;
         
     }
 
@@ -1047,8 +1047,10 @@ width:100%;
 
     .close {
         transition: ease .3s;
-        right:-3.5em;
-        top:9em;
+        right:0;
+        top:0;
+        border-radius:initial;
+        font-size:1.5rem;
     }
 
    .img-shrinker {
@@ -1082,8 +1084,10 @@ width:100%;
     .close {
         transition: ease .3s;
         position:absolute;
-        right:-3em;
-        top:9em;
+        right:0;
+        top:0;
+        border-radius: initial;
+        font-size:1.5rem;
       
     }
 
