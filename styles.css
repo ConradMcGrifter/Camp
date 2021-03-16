@@ -360,20 +360,15 @@ width:100%;
     /* background:#00C9A9; */
     position: relative; 
    
-    /* background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.45), 
-      rgba(15, 15, 15, 0.65)
-    ),
-   
-    url(images/woodtable.jpg); */
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;   
     
 }
 
 .gallery-body {
+    position:relative;
+    top:0;
+    left:0;
+    bottom:0;
+    left:0;
     background: 
     linear-gradient(
       rgba(0, 0, 0, 0.45), 
