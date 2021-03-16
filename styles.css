@@ -349,24 +349,15 @@ width:100%;
 
 /* this is the section that wraps .card-wrapper */
 #gallery {
-    height:100%;
+    height:90%;
     width:100%;
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items:center; 
     /* background:#00C9A9; */
- 
-    
-    position: relative;    
-    
-    
-}
-/* this is for the background image in the gallery. i had to make it seperate from the #gallery div
-because i couldnt adjust the image size without affecting the size of the content? */
-.gallery-wrap {
-    width:100%;
-    height:100%;
+    position: relative; 
+   
     background: 
     linear-gradient(
       rgba(0, 0, 0, 0.45), 
@@ -376,8 +367,11 @@ because i couldnt adjust the image size without affecting the size of the conten
     url(images/woodtable.jpg);
 
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;   
+    
+    
 }
+
 
 
 
@@ -805,12 +799,12 @@ because i couldnt adjust the image size without affecting the size of the conten
        width:350px;
    }
 
-   .gallery-wrap {
-       /* height:initial; */
-       justify-content: space-around;
+   #gallery {
        
+       justify-content: space-around;
+        height:100%;
         width:100%;
-        height:92%;
+        
         background: 
         linear-gradient(
           rgba(0, 0, 0, 0.45), 
