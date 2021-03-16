@@ -364,7 +364,7 @@ width:100%;
 }
 
 .gallery-body {
-    position:fixed;
+    position:relative;
     top:0;
     left:0;
     bottom:0;
