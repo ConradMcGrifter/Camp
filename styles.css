@@ -69,6 +69,7 @@ body {
                 b.LIGHTBOX IMAGES / CONTENT 
                             
             5. MEDIA QUERIES
+                a.SPECIFIC SIZE MEDIA QUERIES
         -------------------------------------- */
 
 
@@ -258,7 +259,7 @@ width:100%;
     opacity: 0;
     z-index: 0;
   
-    animation: imageAnimation 50s linear infinite; 
+    animation: imageAnimation 40s linear infinite; 
     display:flex;
     justify-content: center;
     
@@ -289,7 +290,7 @@ width:100%;
     animation-delay: 30s; 
 }
 
-.cb-slideshow li:nth-child(7) span { 
+/* .cb-slideshow li:nth-child(7) span { 
     
     animation-delay: 36s; 
 }
@@ -297,7 +298,7 @@ width:100%;
 .cb-slideshow li:nth-child(8) span { 
     
     animation-delay: 42s; 
-}
+} */
 
 
 
@@ -828,7 +829,7 @@ width:100%;
 
 
 
-
+/* this resizes the grid */
 @media only screen and (max-width:950px) {
     .portfolio, .portfolio-2019 {
        
@@ -849,12 +850,14 @@ width:100%;
 
 
 /* this is to make the hero info card return to the original position (center I think) */
-@media only screen and (max-width:850px) {
+/* @media only screen and (max-width:850px) {
    .hero__wrapper {
        position: initial;
    } 
-}
+} */
 
+
+/* this makes the grid a single column for small screens */
 @media only screen and (max-width:645px) {
     .portfolio {
         padding-top:3em;
@@ -894,7 +897,7 @@ width:100%;
         }
 }
 
-
+/* this makes the header smaller and tightens gap between the cards in the gallery */
 @media only screen and (max-width:600px) {
     header h1 {
         font-size:2.5rem;
@@ -917,6 +920,8 @@ width:100%;
     }
 
 }
+
+
 
 /* this is the media queries for iphone 6/7/8 */
 @media only screen and (max-width:375px) {
@@ -953,31 +958,9 @@ width:100%;
 
 }
 
-@media only screen and (width:414px) {
-    .img-shrinker {
-        width:375px;
-        
-    }
-
-    .img-shrinker .close {
-        transition: ease .3s;
-        right:0px;
-        top:0px;
-        border-radius:initial;
-    }
-
-    .portfolio-lightbox__content {
-        position:relative;
-        max-width:650px; 
-        
-       
-    }
-    
-
-}
 
 
-
+/* this is resizing stuff for iphone 5  */
 @media only screen and (max-width:320px) {
     .card-img {
        width:100%;  
@@ -987,6 +970,7 @@ width:100%;
          font-size:2.5rem;
      }
 
+     /* this resizes the grid thumbnails at iphone 5 screen size */
      .portfolio img {
          min-width:250px;
      }
@@ -1017,6 +1001,12 @@ width:100%;
 
 
 
+                                 /* =============================
+                                     SPECIFIC SIZE MEDIA QUERIES
+                                    ============================= */
+
+
+
 /* this controls image size when iphone5 is in landscape */
   @media only screen and (width:568px) {
     .img-enlarger {
@@ -1036,6 +1026,30 @@ width:100%;
         
     }
 }
+
+
+/* this resizes the images and changes position of the close button iphone 6/7/8 plus */
+@media only screen and (width:414px) {
+    .img-shrinker {
+        width:375px;
+        
+    }
+
+    .img-shrinker .close {
+        transition: ease .3s;
+        right:0px;
+        top:0px;
+        border-radius:initial;
+    }
+
+    .portfolio-lightbox__content {
+        position:relative;
+        max-width:650px; 
+        
+       
+    }
+}
+
 
  /* this makes the images fit the phone screens when turned into landscape mode */
   @media only screen and (width:667px), (width:640px), (width:812px) {
