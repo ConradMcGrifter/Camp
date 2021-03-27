@@ -25,7 +25,7 @@ function buildMadLib() {
         object +
         ", they were able to construct a small shelter and gather enough " +
         food +
-        " to live comfortably. After building up the camp over the years, it is now responsible for the entire economy of Center Sandwich. If you are coming to visit the camp, meals will be provided but you must bring your own " +
+        " to live comfortably. Over the years the camp has only gotten stronger, and it is now responsible for the entire economy of Center Sandwich. If you are coming to visit the camp, meals will be provided but you must bring your own " +
         noun +
         ".";
     //output

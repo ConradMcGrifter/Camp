@@ -841,7 +841,7 @@ width:100%;
 
     /* this tightens the nav bar title and links at smaller screens */
     header ul {
-        max-width: 200px;
+        /* max-width: 200px; */
     }
     .header-wrap {
         width: 100%;
