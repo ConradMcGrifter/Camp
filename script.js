@@ -6,7 +6,7 @@ document
 //event Function
 function buildMadLib() {
     //input
-    let year = document.getElementById("year").value;
+    let tool = document.getElementById("tool").value;
     let adjective = document.getElementById("adjective").value;
     let place = document.getElementById("place").value;
     let object = document.getElementById("object").value;
@@ -15,13 +15,13 @@ function buildMadLib() {
 
     //process
     let result =
-        "Camp Crocodile Rock was founded in " +
-        year +
-        " by Sam Ethan and Peter. These " +
+        "Camp Crocodile Rock was founded in 2018 by Sam Ethan and Peter. These " +
         adjective +
         " explorers came from " +
         place +
-        " with one goal...To make the best camp the world has ever seen. Equipped with only a couple fishing rods, axes and a " +
+        " with one goal...To make the best camp the world has ever seen. Equipped with only a couple fishing rods, a " +
+        tool +
+        " and a " +
         object +
         ", they were able to construct a small shelter and gather enough " +
         food +
