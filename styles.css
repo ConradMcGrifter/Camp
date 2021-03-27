@@ -1122,6 +1122,8 @@ input:focus {
     position: fixed;
     top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
     z-index: 999;
     background: rgba(151, 151, 151, 1);
     animation: fadeIn 0.75s;
@@ -1135,6 +1137,7 @@ input:focus {
     padding: 2.5em;
     line-height: 1.6;
     box-shadow: 0 5px 25px black;
+    margin: 1.5em;
 }
 
 .madlib-results-wrap:target {
@@ -1208,6 +1211,10 @@ input:focus {
     padding: 1em 0 1.5em 0;
 }
 
+.return-link {
+    color: var(--clr-links);
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -1235,10 +1242,20 @@ input:focus {
         padding: 0 0 1em 1em;
     }
 
+    .madlib-results__content {
+        position: relative;
+        margin: 1em;
+        padding: 1em;
+    }
+
+    .madlib__result {
+        font-size: 1.6rem;
+    }
+
     .corner {
-        top: 10px;
-        right: 0;
         border-radius: initial;
-        border: none;
+        right: 0;
+        top: 0;
+        transform: scale(0.75);
     }
 }
