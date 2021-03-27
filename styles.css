@@ -1,29 +1,19 @@
-
-
-
-
-
-
-
-
-
 :root {
-    --clr-bg:#20323d;
-    --clr-header-and-cards:#1b4b62;
-    --clr-titles:#95AFC1;
-    --clr-titles-seconday:#f1f1e6;
-    --clr-links:#F9F871;
-    --clr-light-sky-blue:lightskyblue;
-    --clr-dark-red:#3e2a37;
-    --clr-highlight:#caf7ff;
+    --clr-bg: #20323d;
+    --clr-header-and-cards: #1b4b62;
+    --clr-titles: #95afc1;
+    --clr-titles-seconday: #f1f1e6;
+    --clr-links: #f9f871;
+    --clr-light-sky-blue: lightskyblue;
+    --clr-dark-red: #3e2a37;
+    --clr-highlight: #caf7ff;
 }
-
 
 html {
     box-sizing: border-box;
-    font-size:62.5%;
-    width:100%;
-    height:100vh;
+    font-size: 62.5%;
+    width: 100%;
+    height: 100vh;
 }
 
 *,
@@ -36,27 +26,24 @@ html {
 h1,
 h2,
 h3 {
-    margin:0;
-    padding:0;
-    
+    margin: 0;
+    padding: 0;
 }
-
 
 body {
-    height:100%;
-    width:100%;
-    margin:0;
-    padding:0;
-    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
     font-size: 1.8rem;
     /* line-height:1.6; */
-    letter-spacing: .075em;
-    color:whitesmoke;
-    background:var(--clr-bg);
-     
+    letter-spacing: 0.075em;
+    color: whitesmoke;
+    background: var(--clr-bg);
 }
 
-      /* ------------------------------------
+/* ------------------------------------
             1. HEADER
             
             2. LANDING PAGE
@@ -72,145 +59,129 @@ body {
                 a.SPECIFIC SIZE MEDIA QUERIES
         -------------------------------------- */
 
-
-                                            /*============ 
+/*=
                                                1. HEADER 
                                               ============*/
 
 .red {
-    color:rgb(184, 30, 30);
-    padding-right:.2em;
-    display:inline-block;
+    color: rgb(184, 30, 30);
+    padding-right: 0.2em;
+    display: inline-block;
 }
 
-header { 
-    display:flex;
+header {
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.6);
-    position:relative;
-    z-index:2;
+    position: relative;
+    z-index: 2;
     /* background:#43142D; */
-    background:var(--clr-header-and-cards);
-    padding:.5em 0;
-    min-height:88px;
+    background: var(--clr-header-and-cards);
+    padding: 0.5em 0;
+    min-height: 88px;
     /* outline:solid blue 3px; */
 }
 
-
 /* this sets the nav link wrapper width on the main index header back to auto because there is only one link */
 .index-header {
-    width:auto;
+    width: auto;
 }
 
 .header-wrap {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:space-between;
-    width:75%;
+    justify-content: space-between;
+    width: 75%;
 }
 
 header h1 {
-    font-size:4rem;
-    text-shadow: 0 1px 5px  rgba(0, 0, 0, 0.705);
-    color:var(--clr-highlight);
+    font-size: 4rem;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.705);
+    color: var(--clr-highlight);
     /* text-shadow: 0 0 5px black; */
-    
-    
 }
 
 header ul {
-    display:flex;
-    list-style:none;
-    width:100%;
+    display: flex;
+    list-style: none;
+    width: 100%;
     /* this tightens the nav link wrap so the links are closer */
-    max-width:350px;
+    max-width: 350px;
     justify-content: space-between;
     align-items: center;
-    padding:0;
-    
+    padding: 0;
 }
 
-                             /* *************
+/* *
                                 link stylings
                                 ************* */
 
 li a {
-    
-    color:var(--clr-links);
-    font-weight:700;
-    font-size:2.5rem;
-    margin:0;
-    padding:0;
+    color: var(--clr-links);
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
     text-decoration: none;
 }
 
 a {
     text-decoration: none;
-    color:#005B77;
-    margin:0;
-    padding:0;
-    
+    color: #005b77;
+    margin: 0;
+    padding: 0;
 }
 
 a:hover {
-    color:var(--clr-titles-seconday);
+    color: var(--clr-titles-seconday);
 }
 
 .link-underline:hover {
-    
-    border-bottom:rgb(255, 166, 0, .25) 2px solid;
+    border-bottom: rgb(255, 166, 0, 0.25) 2px solid;
 }
 
 .link-underline {
     border-bottom: 2px solid #f9f9713b;
-    
 }
 
 .home {
-    color:lightskyblue;
+    color: lightskyblue;
 }
 
 .home:hover {
-    color:var(--clr-titles-seconday);
+    color: var(--clr-titles-seconday);
 }
 
-        /* these are stylings for the links to other pages */
+/* these are stylings for the links to other pages */
 
 .title-2018 {
     text-align: center;
-    padding:1em 1em 0 1em;
-    font-size:2.4rem;
+    padding: 1em 1em 0 1em;
+    font-size: 2.4rem;
 }
 
 .title-current-page {
-    font-size:4rem;
-    margin:0;
-    padding:0;
-    color:rgb(184, 30, 30);
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    color: rgb(184, 30, 30);
 }
 
 /* this gives the view images link more room against the title at smaller screens  */
 .view-images {
     margin: 0 1em 0 0;
-    
 }
 
 .about {
     margin: 0 0 0 1em;
 }
 
-
-        
-
-                                                   /*=============== 
+/*=
                                                     2. LANDING PAGE 
                                                     ================*/
-
-
-
 
 /* this makes it so the landing page screen doesnt scroll at all */
 /* .landing-page {
@@ -221,42 +192,41 @@ width:100%;
 
 /* this makes the slide-show images take up the full screen */
 .landing-page img {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .cb-slideshow,
-.cb-slideshow::after { 
+.cb-slideshow::after {
     position: fixed;
     width: 100%;
     height: 100%;
     /* top: -8px; */
-    top:0;
+    top: 0;
     left: 0px;
-    z-index: 0; 
+    z-index: 0;
     content: "";
     /* background: linear-gradient(
         rgba(0,0,0,.25),
         rgba(0,0,0,.25)
     ),
     url(/images/croc.JPG); */
-    background-color:black;
-    filter:grayscale(75%);
-   
-    background-size:cover;
+    background-color: black;
+    filter: grayscale(75%);
+
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position:center center;
-    z-index:-1;
+    background-position: center center;
+    z-index: -1;
 }
 
 .cb-slideshow li {
     list-style: none;
-    
 }
 
-.cb-slideshow li span { 
+.cb-slideshow li span {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -268,42 +238,34 @@ width:100%;
     background-repeat: none;
     opacity: 0;
     z-index: 0;
-  
-    animation: imageAnimation 36s linear infinite; 
-    display:flex;
+
+    animation: imageAnimation 36s linear infinite;
+    display: flex;
     justify-content: center;
-    
 }
 
-
-
-                                          /*----------------------- 
+/*-
                                              a.SLIDESHOW ANIMATION 
                                             -----------------------*/
 
-.cb-slideshow li:nth-child(1) span { 
-    animation-delay:0s; 
+.cb-slideshow li:nth-child(1) span {
+    animation-delay: 0s;
 }
-.cb-slideshow li:nth-child(2) span { 
-    
-    animation-delay:6s; 
+.cb-slideshow li:nth-child(2) span {
+    animation-delay: 6s;
 }
 
-.cb-slideshow li:nth-child(3) span { 
-    
-    animation-delay: 12s; 
+.cb-slideshow li:nth-child(3) span {
+    animation-delay: 12s;
 }
-.cb-slideshow li:nth-child(4) span { 
-    
-    animation-delay: 18s; 
+.cb-slideshow li:nth-child(4) span {
+    animation-delay: 18s;
 }
-.cb-slideshow li:nth-child(5) span { 
-   
-    animation-delay: 24s; 
+.cb-slideshow li:nth-child(5) span {
+    animation-delay: 24s;
 }
-.cb-slideshow li:nth-child(6) span { 
-    
-    animation-delay: 30s; 
+.cb-slideshow li:nth-child(6) span {
+    animation-delay: 30s;
 }
 
 /* .cb-slideshow li:nth-child(7) span { 
@@ -316,27 +278,27 @@ width:100%;
     animation-delay: 42s; 
 } */
 
-
-@keyframes imageAnimation { 
-	0% {
-	    opacity: 0;
-	    animation-timing-function: ease-in;
-	}
-	8% {
-	    opacity: 1;
-	    transform: scale(1.05);
-	}
-	17% {
-	    opacity: 1;
-	}
-	25% {
-	    opacity: 0;
-	    transform: scale(1.15);
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    8% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+        transform: scale(1.15);
         animation-timing-function: ease-out;
-	}
-	100% { opacity: 0 }
+    }
+    100% {
+        opacity: 0;
+    }
 }
-
 
 /* @keyframes imageAnimation { 
     0% { opacity: 0; animation-timing-function: ease-in; }
@@ -346,27 +308,22 @@ width:100%;
     100% { opacity: 0 }
 } */
 
-
-                                                    /*==============
+/*=
                                                         3. CARDS 
                                                       ==============*/
 
 /* this is the section that wraps .card-wrapper */
 #gallery {
     /* min-height:100%; */
-    width:100%;
-    height:90vh;
-    display:flex;
-    flex-direction:column;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items:center; 
+    align-items: center;
     /* background:#00C9A9; */
-    position: relative; 
-   
-   
-    
+    position: relative;
 }
-
 
 /* .gallery-img {
     width:100%;
@@ -383,82 +340,60 @@ width:100%;
     
 } */
 
-
-
 .gallery-body {
-    position:relative;
-    top:0;
-    left:0;
-    bottom:0;
-    left:0;
-    background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.65), 
-      rgba(15, 15, 15, 0.65)
-    ),
-   
-    url(images/woodtable.jpg),
-    rgb(22, 22, 22);
-     
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(15, 15, 15, 0.65)),
+        url(images/woodtable.jpg), rgb(22, 22, 22);
+
     background-attachment: fixed;
     background-size: cover;
-    background-repeat: no-repeat; 
-    height:100%;  
+    background-repeat: no-repeat;
+    height: 100%;
 }
-
-
-
 
 /* this wraps all the card divs */
 .card-wrapper {
-    display:flex;
-    width:75%;
+    display: flex;
+    width: 75%;
     justify-content: space-evenly;
-    flex-wrap:wrap;
-
-     
+    flex-wrap: wrap;
 }
-
 
 /* this controls the size of the image / cards */
 .card-img {
-   
     object-fit: cover;
     object-position: center;
-    filter:sepia(70%);
-    width:100%;
-    height:300px;
+    filter: sepia(70%);
+    width: 100%;
+    height: 300px;
 }
-
-
 
 .card {
-    margin:.5em;
-    background:var(--clr-titles-seconday);
-    color: #FFF6F3; 
-    padding:.6em;
-    display:flex;
+    margin: 0.5em;
+    background: var(--clr-titles-seconday);
+    color: #fff6f3;
+    padding: 0.6em;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow:0 2px 30px rgba(0, 0, 0, 0.582); 
-    position:relative;
-    z-index:1; 
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.582);
+    position: relative;
+    z-index: 1;
     /* this makes the card turning smoother because it gives the transform a time duration */
-    transition: transform .3s;
-    width:300px; 
-    margin:2em;
-    
-    
- }
-
- .card:hover {
-    box-shadow: 0 25px 20px 10px rgba(0, 0, 0, 0.40);   
-    filter:sepia(5%);
-    transition:ease-out .25s;
-
+    transition: transform 0.3s;
+    width: 300px;
+    margin: 2em;
 }
 
-
+.card:hover {
+    box-shadow: 0 25px 20px 10px rgba(0, 0, 0, 0.4);
+    filter: sepia(5%);
+    transition: ease-out 0.25s;
+}
 
 /* .card-img:hover {
     filter:sepia(5%);
@@ -466,99 +401,86 @@ width:100%;
 
 } */
 
-
 /* this is a wrapper for the two divs display the date and click here for gallery */
- .description-split {
-    display:flex;
+.description-split {
+    display: flex;
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    width:100%;
-    margin-top:1em;
-    position:relative;
-    
- }
+    width: 100%;
+    margin-top: 1em;
+    position: relative;
+}
 
- .description-split h3 {
-    font-size:2rem;
-    font-weight:700;
-    color:var(--clr-dark-red);
+.description-split h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--clr-dark-red);
     font-family: "Gochi Hand", sans-serif;
     letter-spacing: 1px;
-    display:none;
- }
+    display: none;
+}
 
- /* this is the styling for the date on the cards */
- .year {
-     font-size:3.6rem;
-     margin:0 0 0 0;
-     max-width: 5ch;
-     align-self: flex-start;
-     font-weight: bold;
-     color:var(--clr-dark-red);
-     /* text-shadow: 0 0 2px black; */
-     padding-bottom:.2em;
-     line-height:1;
-     font-family: "Gochi Hand", sans-serif;
-     padding:0;
-    
- }
-
+/* this is the styling for the date on the cards */
+.year {
+    font-size: 3.6rem;
+    margin: 0 0 0 0;
+    max-width: 5ch;
+    align-self: flex-start;
+    font-weight: bold;
+    color: var(--clr-dark-red);
+    /* text-shadow: 0 0 2px black; */
+    padding-bottom: 0.2em;
+    line-height: 1;
+    font-family: "Gochi Hand", sans-serif;
+    padding: 0;
+}
 
 .card--2019:hover {
-    transform:translateY(-15px);
+    transform: translateY(-15px);
 }
 
 .card--2018:hover {
-    transform:rotate(-5deg);
-    
+    transform: rotate(-5deg);
 }
 
 .card--2020:hover {
-    transform:rotate(5deg);
-    
+    transform: rotate(5deg);
 }
 
 /* this is controlling the scale animation duration when hovering over the cards */
 .link-wrap {
-    transition:transform .3s;
+    transition: transform 0.35s;
 }
-
+/* this makes the cards grow when hovered over. */
 .link-wrap:hover {
-   transform:scale(1.1);
+    transform: scale(1.1);
 }
 
 @keyframes transitionIn {
     from {
-        opacity:0;
-        transform:translatex(-1000px);
+        opacity: 0;
+        transform: translatex(-1000px);
     }
 
     to {
-        opacity:1;
-        transform:translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
 .card-wrapper {
     animation: transitionIn 1s;
-    transition-timing-function:ease-out;
+    transition-timing-function: ease-out;
 }
-                               
 
- 
+/*=
+                                                            4. PORTFOLIO 
+                                                            ============*/
 
-                                                      /*=================
-                                                         4. PORTFOLIO 
-                                                       ==================*/
-
-
-
-
-                /*------------------------0 
-                4a. GRID AND PREVIEW IMAGES 
-                ---------------------------*/
-
+/*-
+                            4a. GRID AND PREVIEW IMAGES 
+                            ---------------------------*/
 
 /* this is the styling for when you hover over the thumbnails and it dims and text apears */
 
@@ -568,69 +490,66 @@ width:100%;
 } */
 
 .middle {
-    transition: .5s ease;
+    transition: 0.5s ease;
     opacity: 0;
     position: relative;
     text-align: center;
-  }
+}
 
 .text {
     /* background-color:brown; */
     color: rgb(214, 54, 54);
     font-weight: bold;
     font-size: 2rem;
-    padding: .5em .5em;
-    position:absolute;
-    bottom:80px;
-    left:50px;
- }
+    padding: 0.5em 0.5em;
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
+}
 
 .portfolio__item:hover .img-2018 {
-    opacity:0.25;
+    opacity: 0.25;
 }
 
 .portfolio__item:hover .img-2019 {
-    opacity:0.25;
+    opacity: 0.25;
 }
 
 .portfolio__item:hover .img-2020 {
-    opacity:0.25;
+    opacity: 0.25;
 }
 
 .portfolio__item:hover .middle {
     opacity: 1;
-  }
-
+}
 
 /* this is a div wrapping the portfolio item img */
- .portfolio__item {
-     box-shadow: 0 5px 10px  rgba(0, 0, 0, 0.445);   
- }
-
- /* this class is for the anchor tag wrapping each preview img */
-.button {
-    color:white;
-    background:black;
+.portfolio__item {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.445);
 }
 
- /* this is the grid used by 2018 / 2020 */
+/* this class is for the anchor tag wrapping each preview img */
+.button {
+    color: white;
+    background: black;
+}
+
+/* this is the grid used by 2018 / 2020 */
 .portfolio {
-    display:grid;
-    margin:auto;
+    display: grid;
+    margin: auto;
     place-items: center;
-    grid-template-columns:repeat(3, 1fr);
-    
-    gap:2em;
-    padding:5em 2em 2em 2em;
-    max-width:1000px;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 2em;
+    padding: 5em 2em 2em 2em;
+    max-width: 1000px;
     /* width:100%; */
     /* height:90vh; */
-    line-height:initial;
+    line-height: initial;
     font-size: initial;
     /* outline:solid red 3px; */
-
 }
-
 
 /* this is the grid for 2019 */
 /* .portfolio-2019 {
@@ -650,14 +569,13 @@ width:100%;
 
 /* this controls the size of the portfolio thumbnails */
 .portfolio img {
-    min-width:275px;
-    max-height:200px;
+    min-width: 275px;
+    max-height: 200px;
     object-fit: cover;
-    max-width:100%;
-    display:block;
- }
+    max-width: 100%;
+    display: block;
+}
 
- 
 /* 
 .portfolio-2019 img {
     max-width:100%;
@@ -668,279 +586,223 @@ width:100%;
     display:block;
  } */
 
-
-
-
-                    /* --------------------------- 
-                    4b. LIGHTBOX IMAGES / CONTENT
-                    ------------------------------ */
-
+/* -
+                                         4b. LIGHTBOX IMAGES / CONTENT
+                                        ------------------------------ */
 
 .portfolio-lightbox {
-    position:fixed;
-    top:0;
-    left:0;
-    width:100vw;
-    height:100vh;
-    background:rgba(0, 0, 0, 0.75);
-    display:none;
-    align-items:center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    display: none;
+    align-items: center;
     justify-content: center;
-    z-index:4;
-    
-    
+    z-index: 4;
 }
 
 .portfolio-lightbox__content {
-    position:relative;
-    max-width:650px;
-    
-    
+    position: relative;
+    max-width: 650px;
 }
 
-.portfolio-lightbox__content img { 
-    max-width:100%;
-    display:block;
+.portfolio-lightbox__content img {
+    max-width: 100%;
+    display: block;
     /* max-height:1000px; */
-    
-   
+
     object-fit: cover;
     object-position: center;
     /* padding:.3em; */
-    background:rgb(10, 43, 73);
-    border:solid rgb(219, 219, 219) 3px;
-    position:relative;
-    
-   
+    background: rgb(10, 43, 73);
+    border: solid rgb(219, 219, 219) 3px;
+    position: relative;
 }
 /* this makes the lightbox image appear when the thumbnail anchor is clicked */
 .portfolio-lightbox:target {
-    display:flex;
+    display: flex;
 }
-
-
 
 /* this makes the images not taken in portrait mode to be larger. same div as .portfolio-lightbox__content */
 .img-enlarger {
-    position:relative;
-    margin:2em;
-    max-width:1100px;
-    
+    position: relative;
+    margin: 2em;
+    max-width: 1100px;
 }
 
 /* this is the close button on the lightbox images */
 .close {
-    position:absolute;
-    width:2em;
-    height:2em;
-    background:rgb(255, 81, 0);
-    border:solid rgb(219, 219, 219) 3px;
-    right:-1em;
-    top:-1em;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    background: rgb(255, 81, 0);
+    border: solid rgb(219, 219, 219) 3px;
+    right: -1em;
+    top: -1em;
     border-radius: 50%;
-    text-decoration:none;
-    display:flex;
+    text-decoration: none;
+    display: flex;
     justify-content: center;
     align-items: center;
-    z-index:6;
+    z-index: 6;
 }
 
 .close::after {
-    content:"X";
-    color:rgba(17, 17, 17,.75);
-    font-weight:bold;
-    
+    content: "X";
+    color: rgba(17, 17, 17, 0.75);
+    font-weight: bold;
 }
 
-
-
-
-                                                       /*==================
+/*=
                                                           5. MEDIA QUERIES
-                                                         ==================*/
+                                                         ===================*/
 
-
-@media only screen and (min-width:1500px) {
-    
+@media only screen and (min-width: 1500px) {
     /* this is the grid for large screens */
     .portfolio {
         place-items: center;
-        grid-template-columns:repeat(4, 1fr);
-        
-        max-width:1200px;
-       
+        grid-template-columns: repeat(4, 1fr);
+
+        max-width: 1200px;
     }
-    
 }
 
-
-
-@media only screen and (max-width:1396px) {
+@media only screen and (max-width: 1396px) {
     .card-img {
-        height:225px;
+        height: 225px;
     }
 
     .portfolio {
-        display:grid;
-        margin:auto;
+        display: grid;
+        margin: auto;
         place-items: center;
-        grid-template-columns:repeat(3, 1fr);
-        
-        gap:2em;
-        padding:5em 2em 2em 2em;
-        max-width:1000px;
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 2em;
+        padding: 5em 2em 2em 2em;
+        max-width: 1000px;
         /* width:100%; */
         /* height:90vh; */
-        line-height:initial;
+        line-height: initial;
         font-size: initial;
         /* outline:solid red 3px; */
-    
     }
-    
 }
 
-
-
- @media only screen and (max-width:1020px) {
-     
-    
+@media only screen and (max-width: 1020px) {
     header ul {
-      
         /* this tightens the nav link wrap so the links are closer */
-        width:100%;
-        max-width:250px;
+        width: 100%;
+        max-width: 250px;
         justify-content: space-between;
         align-items: center;
-        padding:0;
-        margin:0;
+        padding: 0;
+        margin: 0;
     }
-    
-    
+
     header {
-        min-height:50px;
+        min-height: 50px;
         justify-content: space-evenly;
         /* padding:.5em 0; */
         flex-direction: column;
     }
-    
-    header h1 {
-         font-size: 3rem;
-         padding:.5 0 .5em 0;
-         
-     }
 
-     .title-current-page {
-        font-size:3rem;
+    header h1 {
+        font-size: 3rem;
+        padding: 0.5 0 0.5em 0;
     }
 
-     header a {
-         font-size:1.5rem;
-     }
+    .title-current-page {
+        font-size: 3rem;
+    }
 
-    
-
-   .card-img {
-       width:100%;
-       height:175px;
-       box-shadow:none;
-   }
-
-   .card {
-       width:350px;
-   }
-
-   #gallery {
-       
-       justify-content: space-around;
-        height:100%;
-        width:100%;
-    
-   }
-
-  .description-split h3 {
+    header a {
         font-size: 1.5rem;
-  }
+    }
 
-  .year {
-      font-size:2rem;
-  }
-   
+    .card-img {
+        width: 100%;
+        height: 175px;
+        box-shadow: none;
+    }
 
+    .card {
+        width: 350px;
+    }
 
-   .description-split {
-       margin:0;
-       padding-top:.2em;
-       padding-bottom:.1em
-   }
-
-   .card-wrapper {
-       margin:0;
-       padding:0;
-       justify-content: space-evenly;
-       align-items: center;
-       /* outline:solid green 3px; */
-       /* height:75%; */
-       /* this is to make the cards stack in a single column instead of spreading with 2 on top 1 on bottom */
-       width:50%;
-      
-       
-   }
-
-
-  header ul {
-      padding:0;
-      margin:0;
-  }
-
-  .gallery__title {
-    width:50%;
-    max-width:32ch;
-    text-align: center;
-    margin-bottom:4em;
-    margin-top:2em;
-    font-size:1.5rem;
-    display:none;
-}
+    #gallery {
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+    }
 
     .description-split h3 {
-        display:initial;
+        font-size: 1.5rem;
     }
 
-
-    .header-wrap {
-        justify-content:space-around;
+    .year {
+        font-size: 2rem;
     }
 
     .description-split {
-        padding-top:.5em;
+        margin: 0;
+        padding-top: 0.2em;
+        padding-bottom: 0.1em;
     }
 
+    .card-wrapper {
+        margin: 0;
+        padding: 0;
+        justify-content: space-evenly;
+        align-items: center;
+        /* outline:solid green 3px; */
+        /* height:75%; */
+        /* this is to make the cards stack in a single column instead of spreading with 2 on top 1 on bottom */
+        width: 50%;
+    }
 
+    header ul {
+        padding: 0;
+        margin: 0;
+    }
 
-}  /* <----media query ends */
+    .gallery__title {
+        width: 50%;
+        max-width: 32ch;
+        text-align: center;
+        margin-bottom: 4em;
+        margin-top: 2em;
+        font-size: 1.5rem;
+        display: none;
+    }
 
+    .description-split h3 {
+        display: initial;
+    }
 
+    .header-wrap {
+        justify-content: space-around;
+    }
 
+    .description-split {
+        padding-top: 0.5em;
+    }
+} /* <----media query ends */
 
 /* this resizes the grid */
-@media only screen and (max-width:950px) {
-    .portfolio, .portfolio-2019 {
-       
-        grid-template-columns:repeat(2, 1fr);
+@media only screen and (max-width: 950px) {
+    .portfolio,
+    .portfolio-2019 {
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-       
-        max-width:700px;
-        line-height:initial;
+
+        max-width: 700px;
+        line-height: initial;
         font-size: initial;
-    
     }
-
-    
 }
-
-
-
-
 
 /* this is to make the hero info card return to the original position (center I think) */
 /* @media only screen and (max-width:850px) {
@@ -949,299 +811,397 @@ width:100%;
    } 
 } */
 
-
 /* this makes the grid a single column for small screens */
-@media only screen and (max-width:645px) {
+@media only screen and (max-width: 645px) {
     .portfolio {
-        padding-top:3em;
-        grid-template-columns:repeat(1, 1fr);
+        padding-top: 3em;
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        max-width:1000px;
-        line-height:initial;
+        max-width: 1000px;
+        line-height: initial;
         font-size: initial;
-       
-    
     }
 
     .portfolio-2019 {
-        padding-top:3em;
-        grid-template-columns:repeat(1, 1fr);
+        padding-top: 3em;
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        
     }
 
     .card {
-        padding:.2em;
-        margin:.5em;
-        width:250px;
+        padding: 0.2em;
+        margin: 0.5em;
+        width: 250px;
     }
 
     .card-img {
-        width:100%;
-        height:125px;
+        width: 100%;
+        height: 125px;
     }
 
-       /* this tightens the nav bar title and links at smaller screens */
-        header ul {
-            max-width:200px;
-        }
-        .header-wrap {
-            width:100%;
-        }
+    /* this tightens the nav bar title and links at smaller screens */
+    header ul {
+        max-width: 200px;
+    }
+    .header-wrap {
+        width: 100%;
+    }
 }
 
 /* this makes the header smaller and tightens gap between the cards in the gallery */
-@media only screen and (max-width:600px) {
+@media only screen and (max-width: 600px) {
     header h1 {
-        font-size:2.5rem;
+        font-size: 2.5rem;
     }
-
 
     #gallery {
         justify-content: flex-start;
 
-        
-        padding:2em;
-        font-size:initial;
+        padding: 2em;
+        font-size: initial;
         letter-spacing: initial;
-        
+
         /* height:100%;
-        justify-content: flex-start; */    
+        justify-content: flex-start; */
     }
 
     .card {
-        margin: .7em 0;
+        margin: 0.7em 0;
     }
-
 }
-
-
 
 /* this is the media queries for iphone 6/7/8 */
-@media only screen and (max-width:375px) {
+@media only screen and (max-width: 375px) {
     .img-shrinker {
-            margin:1em;
+        margin: 1em;
     }
     .img-shrinker .close {
-        transition: ease .3s;
-        right:0px;
-        top:0px;
-        border-radius:initial;
+        transition: ease 0.3s;
+        right: 0px;
+        top: 0px;
+        border-radius: initial;
     }
 
-      /*this gives the view images link more room at smaller screens */
-      .view-images, .about {
-        padding-top:.5em;
+    /*this gives the view images link more room at smaller screens */
+    .view-images,
+    .about {
+        padding-top: 0.5em;
     }
-
 
     .card--2019:hover {
-        transform:rotate(-2deg);
+        transform: rotate(-2deg);
     }
-    
+
     .card--2018:hover {
-        transform:rotate(-2deg);
-        
+        transform: rotate(-2deg);
     }
-    
+
     .card--2020:hover {
-        transform:rotate(-2deg);
-        
+        transform: rotate(-2deg);
     }
-
-
 }
 
-
-
 /* this is resizing stuff for iphone 5  */
-@media only screen and (max-width:320px) {
+@media only screen and (max-width: 320px) {
     .card-img {
-       width:100%;  
-     }
+        width: 100%;
+    }
 
-     header h1 {
-         font-size:2.5rem;
-     }
+    header h1 {
+        font-size: 2.5rem;
+    }
 
-     /* this resizes the grid thumbnails at iphone 5 screen size */
-     .portfolio img {
-         min-width:250px;
-     }
+    /* this resizes the grid thumbnails at iphone 5 screen size */
+    .portfolio img {
+        min-width: 250px;
+    }
 
-     .img-shrinker .close {
-        transition: ease .3s;
-        right:0px;
-        top:0px;
-        border-radius:initial;
+    .img-shrinker .close {
+        transition: ease 0.3s;
+        right: 0px;
+        top: 0px;
+        border-radius: initial;
     }
 
     .card--2019:hover {
-        transform:rotate(-2deg);
+        transform: rotate(-2deg);
     }
-    
+
     .card--2018:hover {
-        transform:rotate(-2deg);
-        
+        transform: rotate(-2deg);
     }
-    
+
     .card--2020:hover {
-        transform:rotate(-2deg);
-        
+        transform: rotate(-2deg);
     }
+}
 
- }
-
-
-
-
-                                 /* =============================
+/* =
                                      SPECIFIC SIZE MEDIA QUERIES
                                     ============================= */
 
-
-
 /* this controls image size when iphone5 is in landscape */
-  @media only screen and (width:568px) {
+@media only screen and (width: 568px) {
     .img-enlarger {
-       width:400px;
+        width: 400px;
     }
 
     .close {
-        transition: ease .3s;
-        right:-3em;
-        top:7em;
+        transition: ease 0.3s;
+        right: -3em;
+        top: 7em;
     }
 
     .img-shrinker {
         object-fit: cover;
-        width:225px;
-        
-        
+        width: 225px;
     }
 }
 
-
 /* this resizes the images and changes position of the close button iphone 6/7/8 plus */
-@media only screen and (width:414px) {
+@media only screen and (width: 414px) {
     .img-shrinker {
-        width:375px;
-        
+        width: 375px;
     }
 
     .img-shrinker .close {
-        transition: ease .3s;
-        right:0px;
-        top:0px;
-        border-radius:initial;
+        transition: ease 0.3s;
+        right: 0px;
+        top: 0px;
+        border-radius: initial;
     }
 
     .portfolio-lightbox__content {
-        position:relative;
-        max-width:650px; 
-        
-       
+        position: relative;
+        max-width: 650px;
     }
 }
 
-
- /* this makes the images fit the phone screens when turned into landscape mode */
-  @media only screen and (width:667px), (width:640px), (width:812px) {
+/* this makes the images fit the phone screens when turned into landscape mode */
+@media only screen and (width: 667px), (width: 640px), (width: 812px) {
     .img-enlarger {
-        position:relative;
-        margin:2em;
-        max-width:465px; 
+        position: relative;
+        margin: 2em;
+        max-width: 465px;
     }
 
     .close {
-        transition: ease .3s;
-        right:0;
-        top:0;
-        border-radius:initial;
-        font-size:1.5rem;
-    }
-
-   .img-shrinker {
-        object-fit: cover;
-        width:250px;
-        
-    }
-   
-    .portfolio {
-        padding-top:2em
-    }
-
-  }
-  
-
-  /* this makes the images fit the phone screens when turned into landscape mode */
-  @media only screen and (width:736px), (width:731px), (width:823px) {
-    .img-enlarger {
-        position:relative;
-        margin:2em;
-        max-width:500px; 
+        transition: ease 0.3s;
+        right: 0;
+        top: 0;
+        border-radius: initial;
+        font-size: 1.5rem;
     }
 
     .img-shrinker {
         object-fit: cover;
-        width:250px;
-        
+        width: 250px;
     }
 
+    .portfolio {
+        padding-top: 2em;
+    }
+}
+
+/* this makes the images fit the phone screens when turned into landscape mode */
+@media only screen and (width: 736px), (width: 731px), (width: 823px) {
+    .img-enlarger {
+        position: relative;
+        margin: 2em;
+        max-width: 500px;
+    }
+
+    .img-shrinker {
+        object-fit: cover;
+        width: 250px;
+    }
 
     .close {
-        transition: ease .3s;
-        position:absolute;
-        right:0;
-        top:0;
+        transition: ease 0.3s;
+        position: absolute;
+        right: 0;
+        top: 0;
         border-radius: initial;
-        font-size:1.5rem;
-      
+        font-size: 1.5rem;
     }
 
     .portfolio-lightbox__content img {
         object-fit: cover;
-        width:600px;
+        width: 600px;
     }
 
-    
     /* this makes the portfolios closer to the header when phones are turned to landscape */
     .portfolio-2019 {
-        padding-top:2em
+        padding-top: 2em;
     }
 
     .portfolio {
-        padding-top:2em
+        padding-top: 2em;
     }
-
-  }
-
-
-
-
+}
 
 /* =====
     404 
   ======*/
 
-  .position {
-      width:100%;
-      height:100%;
-     display:flex;
-     align-items: center;
-     justify-content: center;
-  }
-
+.position {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .error-wrap {
     text-align: center;
-    
-    
 }
 
 .return {
-    color:yellow;
+    color: var(--clr-links);
     text-decoration: underline;
-    display:block;
-    margin:.5em;
+    display: block;
+    margin: 0.5em;
+}
+
+/* =====
+                                             ABOUT 
+                                            =======*/
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: rgba(238, 238, 238, 0);
+    color: var(--clr-links);
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+}
+
+input:focus {
+    outline: none;
+}
+
+.madlib__item:nth-child(1) {
+    margin: 0;
+}
+
+.madlib__instructions span {
+    color: var(--clr-links);
+}
+
+.madlib__instructions {
+    padding: 0.5em 2em;
+}
+
+.madlib__item {
+    margin: 1.2em 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    color: var(--clr-highlight);
+}
+
+.madlib__input-items {
+    width: 50%;
+    padding: 0;
+    text-align: center;
+}
+
+.madlib-results-wrap {
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: rgba(151, 151, 151, 0.925);
+    animation: fadeIn 0.75s;
+}
+
+.madlib-results__content {
+    position: relative;
+    z-index: 999;
+    max-width: 70ch;
+    background: rgb(24, 24, 24);
+    padding: 2.5em;
+    line-height: 1.6;
+    box-shadow: 0 5px 25px black;
+}
+
+.madlib-results-wrap:target {
+    display: flex;
+}
+
+.madlib-container {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* outline: solid red 3px; */
+    animation: transitionIn 0.75s;
+}
+
+.madlib-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* border: solid 3px rgba(255, 0, 0, 0.295); */
+    padding: 0;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 2em;
+}
+
+.madlib__button {
+    color: red;
+    border: solid red 2px;
+    width: 125px;
+    height: 40px;
+    text-align: center;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0 0 0;
+}
+
+.madlib__button:hover {
+    background: rgba(255, 0, 0, 0.295);
+}
+
+/* .line-break {
+    height: 2.5px;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--clr-highlight);
+} */
+
+.madlib__h2--color {
+    color: var(--clr-links);
+}
+
+.madlib__h2--bg {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1em;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* outline: solid yellow 2px; */
+    position: relative;
+    padding: 0 0 1.5em 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

@@ -1,29 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="../styles.css">
-    <title>about</title>
-</head>
-<body>
-    <!-- <header>
-        <div class="header-wrap">
-            <h1><span class="red">Camp</span> Crocodile Rock</h1>
-            <ul class="index-header">
-                <li class="link-underline"><a href="../index.html">home</a></li>
-                <li><a href="#"></a></li>
-            </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="stylesheet" href="../styles.css" />
+        <title>about</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-wrap">
+                <h1><span class="red">Camp</span> Crocodile Rock</h1>
+                <ul class="index-header">
+                    <li class="link-underline">
+                        <a href="../index.html">home</a>
+                    </li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="madlib-container">
+            <div class="madlib-wrapper">
+                <h2 class="madlib__h2 madlib__h2--bg">Mad Lib Instructions</h2>
+                <p class="madlib__instructions">
+                    Fill in the blanks below then click the<span>
+                        "Mad Lib"</span
+                    >
+                    button to read about our historic campsite.
+                </p>
+                <div class="line-break"></div>
+                <div class="center">
+                    <ul class="madlib__input-items">
+                        <li class="madlib__item">
+                            Year:
+                            <input
+                                type="text"
+                                class="madlib__input"
+                                id="year"
+                            />
+                        </li>
+                        <li class="madlib__item">
+                            Adjective:
+                            <input
+                                type="text"
+                                class="madlib__input"
+                                id="adjective"
+                            />
+                        </li>
+                        <li class="madlib__item">
+                            Place:
+                            <input
+                                type="text"
+                                class="madlib__input"
+                                id="place"
+                            />
+                        </li>
+                        <li class="madlib__item">
+                            Object:
+                            <input
+                                type="text"
+                                class="madlib__input"
+                                id="object"
+                            />
+                        </li>
+                        <li class="madlib__item">
+                            Food:
+                            <input
+                                type="text"
+                                class="madlib__input"
+                                id="food"
+                            />
+                        </li>
+                        <li class="madlib__item">
+                            Noun:
+                            <input
+                                type="text"
+                                class="madlib__input"
+                                id="noun"
+                            />
+                        </li>
+                    </ul>
+                    <a
+                        class="madlib__button"
+                        id="madlib__button"
+                        href="#results-wrap"
+                        >Mad Lib</a
+                    >
+                </div>
+            </div>
         </div>
-    </header> -->
-<section class="position">
-    <div class="error-wrap">
-        <h1>under construction</h1>
-        <a href="../index.html" class="return">return</a>
-    </div>
-</section>
-</body>
+
+        <div class="madlib-results-wrap" id="results-wrap">
+            <div class="madlib-results__content" id="results-content">
+                <h2 class="madlib__h2 madlib__h2--color">About us:</h2>
+                <p class="madlib__result" id="madlib__result"></p>
+                <a href="../index.html" class="close"></a>
+            </div>
+        </div>
+        <!-- <section class="position">
+            <div class="error-wrap">
+                <h1>under construction</h1>
+                <a href="../index.html" class="return">return</a>
+            </div>
+        </section> -->
+        <script src="../script.js"></script>
+    </body>
 </html>
