@@ -1091,7 +1091,9 @@ input:focus {
 }
 
 .madlib__instructions {
-    padding: 0.5em 2em;
+    padding: 1em 1.5em;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.65);
 }
 
 .madlib__item {
@@ -1101,10 +1103,14 @@ input:focus {
     color: var(--clr-highlight);
 }
 
+.madlib__input {
+    margin: 0.2em 0;
+}
+
 .madlib__input-items {
-    width: 50%;
-    padding: 0;
-    text-align: center;
+    width: 100%;
+    padding: 0 2em 2em 2em;
+    /* text-align: center; */
 }
 
 .madlib-results-wrap {
@@ -1117,7 +1123,7 @@ input:focus {
     top: 0;
     left: 0;
     z-index: 999;
-    background: rgba(151, 151, 151, 0.925);
+    background: rgba(151, 151, 151, 1);
     animation: fadeIn 0.75s;
 }
 
@@ -1136,12 +1142,14 @@ input:focus {
 }
 
 .madlib-container {
-    height: 80vh;
+    /* height: 90vh; */
     display: flex;
     align-items: center;
     justify-content: center;
     /* outline: solid red 3px; */
     animation: transitionIn 0.75s;
+    /* position: relative;
+    top: 50px; */
 }
 
 .madlib-wrapper {
@@ -1149,26 +1157,28 @@ input:focus {
     flex-direction: column;
     /* border: solid 3px rgba(255, 0, 0, 0.295); */
     padding: 0;
-    border-radius: 3px;
-    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 15px 15px;
+    background: var(--clr-header-and-cards);
     margin: 2em;
+    max-width: 600px;
+    min-width: 350px;
 }
 
 .madlib__button {
-    color: red;
-    border: solid red 2px;
-    width: 125px;
+    color: var(--clr-links);
+    border: solid 2px var(--clr-links);
+    width: 150px;
     height: 40px;
     text-align: center;
     border-radius: 999px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1em 0 0 0;
+    margin: 0 auto;
 }
 
 .madlib__button:hover {
-    background: rgba(255, 0, 0, 0.295);
+    background: rgba(207, 187, 0, 0.644);
 }
 
 /* .line-break {
@@ -1183,18 +1193,19 @@ input:focus {
 }
 
 .madlib__h2--bg {
-    background: rgba(0, 0, 0, 0.4);
-    padding: 1em;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 0.5em 0 0 0.75em;
+    font-size: 3.5rem;
 }
 
 .center {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     /* outline: solid yellow 2px; */
     position: relative;
-    padding: 0 0 1.5em 0;
+    padding: 1em 0 1.5em 0;
 }
 
 @keyframes fadeIn {
@@ -1203,5 +1214,24 @@ input:focus {
     }
     to {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .madlib__instructions {
+        font-size: 1.6rem;
+    }
+
+    .madlib__h2--bg {
+        font-size: 2.4rem;
+    }
+
+    .madlib__item {
+        margin: 0.2em;
+    }
+
+    .madlib__input-items {
+        width: 40%;
+        padding: 0 0 1em 1em;
     }
 }

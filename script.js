@@ -11,7 +11,7 @@ function buildMadLib() {
     let place = document.getElementById("place").value;
     let object = document.getElementById("object").value;
     let food = document.getElementById("food").value;
-    let noun = document.getElementById("noun").value;
+    let noun = document.getElementById("plural-noun").value;
 
     //process
     let result =
