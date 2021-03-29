@@ -1076,6 +1076,8 @@ input {
     color: var(--clr-links);
     font-size: 2rem;
     letter-spacing: 0.1em;
+    height: 35px;
+    width: 100%;
 }
 
 input:focus {
@@ -1094,6 +1096,7 @@ input:focus {
     padding: 1em 1.5em;
     margin: 0;
     background: rgba(0, 0, 0, 0.65);
+    line-height: 1.6;
 }
 
 .madlib__item {
@@ -1101,6 +1104,9 @@ input:focus {
     padding: 0;
     list-style-type: none;
     color: var(--clr-highlight);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .madlib__input {
@@ -1109,8 +1115,13 @@ input:focus {
 
 .madlib__input-items {
     width: 100%;
-    padding: 0 2em 2em 2em;
+    padding: 0;
     /* text-align: center; */
+}
+
+.madlib__item p {
+    width: 40%;
+    text-align: center;
 }
 
 .madlib-results-wrap {
@@ -1165,6 +1176,9 @@ input:focus {
     margin: 2em;
     max-width: 600px;
     min-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .madlib__button {
@@ -1197,8 +1211,11 @@ input:focus {
 
 .madlib__h2--bg {
     background: rgba(0, 0, 0, 0.65);
-    padding: 0.5em 0 0 0.75em;
+    padding: 0.5em 0 0 0;
     font-size: 3.5rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .center {
@@ -1209,6 +1226,7 @@ input:focus {
     /* outline: solid yellow 2px; */
     position: relative;
     padding: 1em 0 1.5em 0;
+    width: 75%;
 }
 
 .return-link {
@@ -1239,7 +1257,7 @@ input:focus {
 
     .madlib__input-items {
         width: 40%;
-        padding: 0 0 1em 1em;
+        padding: 0;
     }
 
     .madlib-results__content {
@@ -1257,5 +1275,27 @@ input:focus {
         right: 0;
         top: 0;
         transform: scale(0.75);
+    }
+
+    .center {
+        width: initial;
+        padding: 1em;
+    }
+
+    .madlib__item p {
+        width: initial;
+        text-align: initial;
+        margin-right: 0.5em;
+        font-size: 1.6rem;
+    }
+
+    .madlib__item {
+        width: 300px;
+        text-align: initial;
+    }
+
+    .madlib__input {
+        margin-bottom: 0;
+        font-size: 1.6rem;
     }
 }
