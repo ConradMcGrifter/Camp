@@ -1321,4 +1321,12 @@ input:focus {
         margin-top: 0;
         width: 100%;
     }
+
+    .plural-noun {
+        width: 100%;
+    }
+
+    .plural-noun-input {
+        width: 500px;
+    }
 }
