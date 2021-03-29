@@ -1084,9 +1084,9 @@ input:focus {
     outline: none;
 }
 
-.madlib__item:nth-child(1) {
+/* .madlib__item:nth-child(1) {
     margin: 0;
-}
+} */
 
 .madlib__instructions span {
     color: var(--clr-links);
@@ -1192,6 +1192,7 @@ input:focus {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 .madlib__button:hover {
@@ -1225,7 +1226,7 @@ input:focus {
     justify-content: center;
     /* outline: solid yellow 2px; */
     position: relative;
-    padding: 1em 0 1.5em 0;
+    padding: 1em 0 2em 0;
     width: 75%;
 }
 
@@ -1297,5 +1298,27 @@ input:focus {
     .madlib__input {
         margin-bottom: 0;
         font-size: 1.6rem;
+    }
+
+    .madlibs__result {
+    }
+
+    .madlib-results__content {
+        max-width: 370px;
+        max-height: 650px;
+        overflow: auto;
+        position: relative;
+        margin: 0.5em;
+        padding: 1em;
+    }
+
+    .madlib__h2--bg {
+        text-align: initial;
+        padding: 1em 0 0 1em;
+    }
+
+    .madlib__button {
+        margin-top: 0;
+        width: 100%;
     }
 }
