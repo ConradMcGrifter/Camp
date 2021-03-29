@@ -1287,7 +1287,6 @@ input:focus {
         width: initial;
         text-align: initial;
         margin-right: 0.5em;
-        font-size: 1.8rem;
     }
 
     .madlib__item {
@@ -1297,7 +1296,6 @@ input:focus {
 
     .madlib__input {
         margin-bottom: 0;
-        font-size: 1.8rem;
     }
 
     .madlibs__result {
@@ -1327,6 +1325,6 @@ input:focus {
     }
 
     .plural-noun-input {
-        width: 500px;
+        width: 100%;
     }
 }
