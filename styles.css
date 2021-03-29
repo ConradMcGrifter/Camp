@@ -1321,10 +1321,10 @@ input:focus {
     }
 
     .plural-noun {
-        width: 100%;
+        width: 0;
     }
 
     .plural-noun-input {
-        width: 100%;
+        width: 140%;
     }
 }
