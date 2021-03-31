@@ -1384,4 +1384,9 @@ input:focus {
     .plural-noun-input {
         width: 140%;
     }
+
+    /* this makes it so the return home link clickable area doesnt cover the full width of the container for mobile */
+    .return-link {
+        width: 35%;
+    }
 }
