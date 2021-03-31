@@ -31,3 +31,4 @@ function buildMadLib() {
     //output
     document.getElementById("madlib__result").innerHTML = result;
 }
+

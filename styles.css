@@ -1323,9 +1323,10 @@ input:focus {
 
     .corner {
         border-radius: initial;
-        right: 0;
-        top: 0;
+        right: 25px;
+        top: 600px;
         transform: scale(0.75);
+        display: none;
     }
 
     .center {
@@ -1350,16 +1351,20 @@ input:focus {
         font-size: 1.8rem;
     }
 
-    .madlibs__result {
+    .madlib__result {
+        letter-spacing: 0.025em;
     }
 
     .madlib-results__content {
-        max-width: 370px;
-        max-height: 650px;
+        max-width: 100vw;
+        height: 100vh;
         overflow: auto;
         position: relative;
-        margin: 0.5em;
-        padding: 1em;
+        margin: 0;
+        padding: 0.75em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .madlib__h2--bg {
