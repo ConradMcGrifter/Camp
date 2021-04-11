@@ -65,6 +65,7 @@ body {
 
 .container {
     background: var(--clr-header-and-cards);
+    box-shadow: -1px 0px 15px black;
 }
 
 .nav__title {
@@ -1028,7 +1029,7 @@ width:100%;
     #gallery {
         justify-content: flex-start;
 
-        padding: 2em;
+        padding: 1em;
         font-size: initial;
         letter-spacing: initial;
 
