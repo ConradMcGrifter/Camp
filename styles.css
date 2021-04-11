@@ -54,8 +54,10 @@ body {
             4. PORTFOLIO
                 a.GRID AND PREVIEW IMAGES
                 b.LIGHTBOX IMAGES / CONTENT 
+
+            5. MADLIB
                             
-            5. MEDIA QUERIES
+            6. MEDIA QUERIES
                 a.SPECIFIC SIZE MEDIA QUERIES
         -------------------------------------- */
 
@@ -758,7 +760,292 @@ width:100%;
 }
 
 /*=
-                                                          5. MEDIA QUERIES
+                                                          5. MADLIB
+                                                         =============*/
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: rgba(238, 238, 238, 0);
+    color: var(--clr-links);
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    height: 35px;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* .madlib__item:nth-child(1) {
+    margin: 0;
+} */
+
+.madlib__instructions span {
+    color: var(--clr-links);
+}
+
+.madlib__instructions {
+    padding: 1em 1.5em;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.65);
+    line-height: 1.6;
+}
+
+.madlib__item {
+    /* margin: 1.2em 0 0 0; */
+    padding: 0;
+    list-style-type: none;
+    color: var(--clr-highlight);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.madlib__input {
+    margin: 0.2em 0;
+    font-size: 2.4rem;
+}
+
+.madlib__input-items {
+    width: 100%;
+    padding: 0;
+    /* text-align: center; */
+}
+
+.madlib__item p {
+    min-width: 40%;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.madlib-results-wrap {
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    background: rgba(151, 151, 151, 1);
+    animation: fadeIn 0.75s;
+}
+
+.madlib-results__content {
+    position: relative;
+    z-index: 999;
+    max-width: 70ch;
+    background: rgb(24, 24, 24);
+    padding: 2.5em;
+    line-height: 1.6;
+    box-shadow: 0 5px 25px black;
+    margin: 1.5em;
+}
+
+.madlib-results-wrap:target {
+    display: flex;
+}
+
+.madlib-container {
+    /* height: 90vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* outline: solid red 3px; */
+    animation: transitionIn 0.75s;
+    /* position: relative;
+    top: 50px; */
+}
+
+.madlib-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* border: solid 3px rgba(255, 0, 0, 0.295); */
+    padding: 0;
+    border-radius: 0 0 15px 15px;
+    background: var(--clr-header-and-cards);
+    margin: 2em;
+    max-width: 600px;
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.473);
+}
+
+.madlib__button {
+    color: var(--clr-links);
+    border: solid 2px var(--clr-links);
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.madlib__button:hover {
+    background: rgba(207, 187, 0, 0.644);
+}
+
+/* .line-break {
+    height: 2.5px;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--clr-highlight);
+} */
+
+.madlib__h2--color {
+    color: var(--clr-links);
+}
+
+.madlib__h2--bg {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 0.5em 0 0 0;
+    font-size: 3.5rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* outline: solid yellow 2px; */
+    position: relative;
+    padding: 1em 0 2em 0;
+    width: 65%;
+}
+
+.return-link {
+    color: var(--clr-links);
+}
+
+.return-link.hide {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .madlib__instructions {
+        font-size: 1.6rem;
+    }
+
+    .madlib__h2--bg {
+        font-size: 2.4rem;
+    }
+
+    .madlib__item {
+        margin: 0.2em;
+    }
+
+    .madlib__input-items {
+        /* width: 40%; */
+        padding: 0;
+    }
+
+    .madlib-results__content {
+        position: relative;
+        margin: 1em;
+        padding: 1em;
+    }
+
+    .madlib__result {
+        font-size: 1.6rem;
+    }
+
+    .corner {
+        border-radius: initial;
+        right: 25px;
+        top: 600px;
+        transform: scale(0.75);
+        display: none;
+    }
+
+    .center {
+        width: initial;
+        padding: 1em;
+    }
+
+    .madlib__item p {
+        width: initial;
+        text-align: center;
+        margin: 0.5em;
+        font-size: 1.8rem;
+    }
+
+    .madlib__item {
+        width: 300px;
+        text-align: initial;
+    }
+
+    .madlib__input {
+        margin-bottom: 0;
+        font-size: 1.8rem;
+    }
+
+    .madlib__result {
+        letter-spacing: 0.025em;
+    }
+
+    .madlib-results__content {
+        max-width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        position: relative;
+        margin: 0;
+        padding: 0.75em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .madlib__h2--bg {
+        text-align: initial;
+        padding: 1em 0 0 1em;
+    }
+
+    .madlib__button {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .plural-noun {
+        width: 0;
+    }
+
+    .plural-noun-input {
+        width: 140%;
+    }
+
+    /* this makes it so the return home link clickable area doesnt cover the full width of the container for mobile */
+    .return-link {
+        width: 35%;
+    }
+}
+
+/*=
+                                                          6. MEDIA QUERIES
                                                          ===================*/
 
 @media only screen and (min-width: 1500px) {
@@ -1257,287 +1544,6 @@ width:100%;
     text-decoration: underline;
     display: block;
     margin: 0.5em;
-}
-
-/* =====
-                                             ABOUT 
-                                            =======*/
-
-input {
-    border-top-style: hidden;
-    border-right-style: hidden;
-    border-left-style: hidden;
-    border-bottom-style: groove;
-    background-color: rgba(238, 238, 238, 0);
-    color: var(--clr-links);
-    font-size: 2rem;
-    letter-spacing: 0.1em;
-    height: 35px;
-    width: 100%;
-}
-
-input:focus {
-    outline: none;
-}
-
-/* .madlib__item:nth-child(1) {
-    margin: 0;
-} */
-
-.madlib__instructions span {
-    color: var(--clr-links);
-}
-
-.madlib__instructions {
-    padding: 1em 1.5em;
-    margin: 0;
-    background: rgba(0, 0, 0, 0.65);
-    line-height: 1.6;
-}
-
-.madlib__item {
-    /* margin: 1.2em 0 0 0; */
-    padding: 0;
-    list-style-type: none;
-    color: var(--clr-highlight);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.madlib__input {
-    margin: 0.2em 0;
-    font-size: 2.4rem;
-}
-
-.madlib__input-items {
-    width: 100%;
-    padding: 0;
-    /* text-align: center; */
-}
-
-.madlib__item p {
-    min-width: 40%;
-    font-size: 2.4rem;
-    text-align: center;
-}
-
-.madlib-results-wrap {
-    display: none;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 999;
-    background: rgba(151, 151, 151, 1);
-    animation: fadeIn 0.75s;
-}
-
-.madlib-results__content {
-    position: relative;
-    z-index: 999;
-    max-width: 70ch;
-    background: rgb(24, 24, 24);
-    padding: 2.5em;
-    line-height: 1.6;
-    box-shadow: 0 5px 25px black;
-    margin: 1.5em;
-}
-
-.madlib-results-wrap:target {
-    display: flex;
-}
-
-.madlib-container {
-    /* height: 90vh; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* outline: solid red 3px; */
-    animation: transitionIn 0.75s;
-    /* position: relative;
-    top: 50px; */
-}
-
-.madlib-wrapper {
-    display: flex;
-    flex-direction: column;
-    /* border: solid 3px rgba(255, 0, 0, 0.295); */
-    padding: 0;
-    border-radius: 0 0 15px 15px;
-    background: var(--clr-header-and-cards);
-    margin: 2em;
-    max-width: 600px;
-    min-width: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.473);
-}
-
-.madlib__button {
-    color: var(--clr-links);
-    border: solid 2px var(--clr-links);
-    width: 100%;
-    height: 40px;
-    text-align: center;
-    border-radius: 999px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-
-.madlib__button:hover {
-    background: rgba(207, 187, 0, 0.644);
-}
-
-/* .line-break {
-    height: 2.5px;
-    width: 100%;
-    margin: 0 auto;
-    background: var(--clr-highlight);
-} */
-
-.madlib__h2--color {
-    color: var(--clr-links);
-}
-
-.madlib__h2--bg {
-    background: rgba(0, 0, 0, 0.65);
-    padding: 0.5em 0 0 0;
-    font-size: 3.5rem;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.center {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    /* outline: solid yellow 2px; */
-    position: relative;
-    padding: 1em 0 2em 0;
-    width: 65%;
-}
-
-.return-link {
-    color: var(--clr-links);
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@media only screen and (max-width: 475px) {
-    .madlib__instructions {
-        font-size: 1.6rem;
-    }
-
-    .madlib__h2--bg {
-        font-size: 2.4rem;
-    }
-
-    .madlib__item {
-        margin: 0.2em;
-    }
-
-    .madlib__input-items {
-        /* width: 40%; */
-        padding: 0;
-    }
-
-    .madlib-results__content {
-        position: relative;
-        margin: 1em;
-        padding: 1em;
-    }
-
-    .madlib__result {
-        font-size: 1.6rem;
-    }
-
-    .corner {
-        border-radius: initial;
-        right: 25px;
-        top: 600px;
-        transform: scale(0.75);
-        display: none;
-    }
-
-    .center {
-        width: initial;
-        padding: 1em;
-    }
-
-    .madlib__item p {
-        width: initial;
-        text-align: center;
-        margin: 0.5em;
-        font-size: 1.8rem;
-    }
-
-    .madlib__item {
-        width: 300px;
-        text-align: initial;
-    }
-
-    .madlib__input {
-        margin-bottom: 0;
-        font-size: 1.8rem;
-    }
-
-    .madlib__result {
-        letter-spacing: 0.025em;
-    }
-
-    .madlib-results__content {
-        max-width: 100vw;
-        height: 100vh;
-        overflow: auto;
-        position: relative;
-        margin: 0;
-        padding: 0.75em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .madlib__h2--bg {
-        text-align: initial;
-        padding: 1em 0 0 1em;
-    }
-
-    .madlib__button {
-        margin-top: 0;
-        width: 100%;
-    }
-
-    .plural-noun {
-        width: 0;
-    }
-
-    .plural-noun-input {
-        width: 140%;
-    }
-
-    /* this makes it so the return home link clickable area doesnt cover the full width of the container for mobile */
-    .return-link {
-        width: 35%;
-    }
 }
 
 .game-container {
