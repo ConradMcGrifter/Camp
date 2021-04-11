@@ -563,6 +563,18 @@ width:100%;
     transition-timing-function: ease-out;
 }
 
+@keyframes shortTransitionIn {
+    from {
+        opacity: 0.25;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /*=
                                                             4. PORTFOLIO 
                                                             ============*/
@@ -954,6 +966,7 @@ width:100%;
         padding: 0 0.5em 0.5em 0.5em;
         margin: 0;
         background: var(--clr-header-and-cards);
+        animation: shortTransitionIn 0.5s;
     }
 
     #gallery {
