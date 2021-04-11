@@ -45,6 +45,7 @@ body {
 
 /* ------------------------------------
             1. HEADER
+                a. link styles
             
             2. LANDING PAGE
                 a.SLIDESHOW ANIMATION 
@@ -197,8 +198,8 @@ header ul {
 } */
 
 /* *
-                                link stylings
-                                ************* */
+                                a. link styles
+                                ***************** */
 
 /* li a {
     color: var(--clr-links);
