@@ -25,7 +25,7 @@ function buildMadLib() {
         pluralNoun == ""
     ) {
         let result = "Please fill out the madlib to read about our history";
-        console.log("test");
+
         elem.style.display = "none";
         elem2.style.display = "none";
         document.getElementById("madlib__result").innerHTML = result;
