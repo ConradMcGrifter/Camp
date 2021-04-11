@@ -743,7 +743,7 @@ width:100%;
     display: none;
     align-items: center;
     justify-content: center;
-    z-index: 4;
+    z-index: 999;
 }
 
 .portfolio-lightbox__content {
@@ -1266,7 +1266,7 @@ input:focus {
         top: 0;
         left: 0;
         right: 0;
-        z-index: 999;
+        z-index: 998;
     }
     .nav__title {
         width: auto;
