@@ -967,7 +967,7 @@ width:100%;
         padding: 0 0.5em 0.5em 0.5em;
         margin: 0;
         background: var(--clr-header-and-cards);
-        /* animation: shortTransitionIn 0.5s; */
+        animation: shortTransitionIn 0.5s;
     }
 
     #gallery {
