@@ -113,7 +113,17 @@ nav {
 
 .hamburger.rotate {
     transform: rotate(90deg);
-    animation: rotate 0.5s;
+    animation: rotate 0.75s, colorFade 0.75s;
+    color: var(--clr-links);
+}
+
+@keyframes colorFade {
+    from {
+        color: white;
+    }
+    to {
+        color: var(--clr-links);
+    }
 }
 
 /* .red {
