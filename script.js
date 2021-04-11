@@ -32,3 +32,4 @@ function buildMadLib() {
     document.getElementById("madlib__result").innerHTML = result;
 }
 
+//nav bar

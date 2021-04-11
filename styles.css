@@ -63,7 +63,52 @@ body {
                                                1. HEADER 
                                               ============*/
 
-.red {
+.container {
+    background: var(--clr-header-and-cards);
+}
+
+.nav__title {
+    padding-left: 2em;
+    width: 400px;
+    font-size: 3rem;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1em;
+}
+
+.nav__ul a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em 1.5em;
+    font-size: 2rem;
+}
+
+.hamburger {
+    background: transparent;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+/* .red {
     color: rgb(184, 30, 30);
     padding-right: 0.2em;
     display: inline-block;
@@ -77,16 +122,15 @@ header {
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.6);
     position: relative;
     z-index: 2;
-    /* background:#43142D; */
+
     background: var(--clr-header-and-cards);
     padding: 0.5em 0;
     min-height: 88px;
-    /* outline:solid blue 3px; */
-}
+} */
 
 /* this sets the nav link wrapper width on the main index header back to auto because there is only one link */
 
-.header-wrap {
+/* .header-wrap {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -100,31 +144,31 @@ header {
 
 .index-header li {
     margin-left: 2em;
-}
+} */
 
-header h1 {
+/* header h1 {
     font-size: 4rem;
     text-shadow: 0 1px 5px rgba(0, 0, 0, 0.705);
     color: var(--clr-highlight);
-    /* text-shadow: 0 0 5px black; */
+    
 }
 
 header ul {
     display: flex;
     list-style: none;
     width: 100%;
-    /* this tightens the nav link wrap so the links are closer */
+
     max-width: 450px;
     justify-content: space-between;
     align-items: center;
     padding: 0;
-}
+} */
 
 /* *
                                 link stylings
                                 ************* */
 
-li a {
+/* li a {
     color: var(--clr-links);
     font-weight: 700;
     font-size: 2.5rem;
@@ -142,9 +186,9 @@ a {
 
 a:hover {
     color: var(--clr-titles-seconday);
-}
+} */
 
-.link-underline:hover {
+/* .link-underline:hover {
     border-bottom: rgb(255, 166, 0, 0.25) 2px solid;
 }
 
@@ -160,7 +204,7 @@ a:hover {
     color: var(--clr-titles-seconday);
 }
 
-/* these are stylings for the links to other pages */
+
 
 .title-2018 {
     text-align: center;
@@ -175,14 +219,10 @@ a:hover {
     color: rgb(184, 30, 30);
 }
 
-/* this gives the view images link more room against the title at smaller screens  */
-/* .view-images {
-    margin: 0 1em 0 0;
-} */
 
 .game {
     color: red;
-}
+} */
 
 /*=
                                                     2. LANDING PAGE 
@@ -321,7 +361,7 @@ width:100%;
 #gallery {
     /* min-height:100%; */
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -871,6 +911,29 @@ width:100%;
    } 
 } */
 
+@media only screen and (max-width: 800px) {
+    .nav__title {
+        width: 300px;
+        padding: 0.5em;
+        font-size: 2.2rem;
+    }
+    .nav__ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 0.25em;
+    }
+
+    .nav__ul.show {
+        display: flex;
+    }
+}
+
 /* this makes the grid a single column for small screens */
 @media only screen and (max-width: 645px) {
     .portfolio {
@@ -965,9 +1028,9 @@ width:100%;
         margin-left: 0em;
     }
 
-    li:nth-child(1) {
+    /* li:nth-child(1) {
         margin-right: 1em;
-    }
+    } */
 }
 
 /* this is resizing stuff for iphone 5  */
@@ -1415,7 +1478,7 @@ input:focus {
 
 .game-container {
     width: 100%;
-    height: 90%;
+    height: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;

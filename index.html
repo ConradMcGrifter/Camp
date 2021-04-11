@@ -11,14 +11,20 @@
             rel="stylesheet"
         />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
+
         <link
             href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+        />
+
         <title>Crocodile rock</title>
     </head>
     <body>
-        <header>
+        <!-- <header>
             <div class="header-wrap">
                 <h1><span class="red">Camp</span> Crocodile Rock</h1>
                 <ul class="index-header">
@@ -33,7 +39,26 @@
                     </li>
                 </ul>
             </div>
-        </header>
+        </header> -->
+        <div class="container">
+            <nav>
+                <h1 class="nav__title">Camp Crocodile Rock</h1>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav__ul" id="nav__ul">
+                    <li class="link-underline view-images">
+                        <a href="pages/gallery.html">view images</a>
+                    </li>
+                    <li class="link-underline about">
+                        <a class="home" href="pages/about.html">about us</a>
+                    </li>
+                    <li class="link-underline game">
+                        <a class="home game" href="pages/game.html">game</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
         <!-- SLIDE SHOW -->
         <section class="landing-page">
@@ -84,5 +109,6 @@
             </li> -->
             </ul>
         </section>
+        <script src="../navbar.js"></script>
     </body>
 </html>

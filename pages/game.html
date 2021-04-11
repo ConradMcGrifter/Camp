@@ -14,10 +14,14 @@
             href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+        />
         <title>Document</title>
     </head>
     <body>
-        <header>
+        <!-- <header>
             <div class="header-wrap">
                 <h1><span class="red">Camp</span> Crocodile Rock</h1>
                 <ul class="index-header">
@@ -27,7 +31,28 @@
                     <li><a href="#"></a></li>
                 </ul>
             </div>
-        </header>
+        </header> -->
+
+        <div class="container">
+            <nav>
+                <h1 class="nav__title">Camp Crocodile Rock</h1>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav__ul" id="nav__ul">
+                    <li class="link-underline view-images">
+                        <a href="gallery.html">view images</a>
+                    </li>
+                    <li class="link-underline about">
+                        <a class="home" href="about.html">about us</a>
+                    </li>
+                    <li class="link-underline">
+                        <a href="../index.html">home</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
         <div class="game-container">
             <div class="game-wrap">
                 <iframe
@@ -49,5 +74,6 @@
                 </ul>
             </div>
         </div>
+        <script src="../navbar.js"></script>
     </body>
 </html>
