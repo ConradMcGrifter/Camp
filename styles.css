@@ -1190,7 +1190,7 @@ input:focus {
 
     #gallery {
         justify-content: space-around;
-        /* height: 100%; */
+        height: auto;
         width: 100%;
     }
 
@@ -1269,7 +1269,7 @@ input:focus {
 
 @media only screen and (max-width: 800px) {
     body {
-        height: initial;
+        height: auto;
     }
     .container {
         position: fixed;
