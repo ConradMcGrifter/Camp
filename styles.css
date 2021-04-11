@@ -111,6 +111,15 @@ nav {
     outline: none;
 }
 
+.hamburger.active {
+    animation: rotate 0.5s;
+}
+
+.hamburger.rotate {
+    transform: rotate(90deg);
+    animation: rotate 0.5s;
+}
+
 /* .red {
     color: rgb(184, 30, 30);
     padding-right: 0.2em;
@@ -575,6 +584,16 @@ width:100%;
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(90deg);
     }
 }
 
