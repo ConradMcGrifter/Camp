@@ -111,6 +111,20 @@ nav {
     outline: none;
 }
 
+/* this class gets toggled when hamburger is clicked to darken the rest of the page */
+.darken {
+    background: rgba(0, 0, 0, 0.65);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    animation: fadeIn 0.5s;
+    height: 100%;
+    width: 100%;
+}
+
 .hamburger.rotate {
     transform: rotate(90deg);
     animation: rotate 0.6s, colorFade 0.6s;
@@ -1339,10 +1353,6 @@ input:focus {
         height: 125px;
     }
 
-    /* this tightens the nav bar title and links at smaller screens */
-    header ul {
-        /* max-width: 200px; */
-    }
     .header-wrap {
         width: 100%;
     }
@@ -1599,15 +1609,4 @@ input:focus {
 
 .game__li {
     margin-top: 0.5em;
-}
-
-.darken {
-    background: rgba(0, 0, 0, 0.65);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
-    animation: fadeIn 0.5s;
 }
