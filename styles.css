@@ -111,10 +111,6 @@ nav {
     outline: none;
 }
 
-.hamburger.active {
-    animation: rotate 0.5s;
-}
-
 .hamburger.rotate {
     transform: rotate(90deg);
     animation: rotate 0.5s;

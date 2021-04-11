@@ -1,10 +1,14 @@
 const hamburger = document.getElementById("hamburger");
 const navUl = document.getElementById("nav__ul");
 
-hamburger.addEventListener("click", () => {
-    navUl.classList.toggle("show");
-});
+//toggle drop down menu
+hamburger.addEventListener("click", show);
 
+function show() {
+    navUl.classList.toggle("show");
+}
+
+//rotates the hamburger on click
 hamburger.addEventListener("click", animation);
 
 function animation() {
