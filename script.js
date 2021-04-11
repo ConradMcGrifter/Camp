@@ -5,6 +5,7 @@ document
 
 const elem = document.getElementById("madlib__h2");
 const elem2 = document.getElementById("return-link");
+const madlibButton = document.getElementById("madlib__button");
 
 //event Function
 function buildMadLib() {
@@ -24,12 +25,15 @@ function buildMadLib() {
         food == "" ||
         pluralNoun == ""
     ) {
-        let result = "Please fill out the madlib to read about our history";
+        // let result = "Please fill out the madlib to read about our history";
 
-        elem.style.display = "none";
-        elem2.style.display = "none";
-        document.getElementById("madlib__result").innerHTML = result;
+        madlibButton.href = "#";
+        alert("please fill out the madlib");
+        // elem.style.display = "none";
+        // elem2.style.display = "none";
+        // document.getElementById("madlib__result").innerHTML = result;
     } else {
+        madlibButton.href = "#results-wrap";
         let result =
             "Camp Crocodile Rock was founded in 2018 by Sam Ethan and Peter. These " +
             adjective +
