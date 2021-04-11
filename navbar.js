@@ -5,6 +5,7 @@ const navUl = document.getElementById("nav__ul");
 hamburger.addEventListener("click", show);
 
 function show() {
+    navUl.style.transform.translateY = "-20";
     navUl.classList.toggle("show");
 }
 
