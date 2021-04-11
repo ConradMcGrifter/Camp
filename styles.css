@@ -89,7 +89,6 @@ nav {
 }
 
 .nav__ul a {
-    color: white;
     text-decoration: none;
     display: inline-block;
     padding: 1em 1.5em;
@@ -193,8 +192,16 @@ a:hover {
     border-bottom: rgb(255, 166, 0, 0.25) 2px solid;
 }
 
-.link-underline {
+ .link-underline {
     border-bottom: 2px solid #f9f9713b;
+} */
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: var(--clr-links);
 }
 
 .home {
@@ -204,8 +211,6 @@ a:hover {
 .home:hover {
     color: var(--clr-titles-seconday);
 }
-
-
 
 .title-2018 {
     text-align: center;
@@ -220,10 +225,10 @@ a:hover {
     color: rgb(184, 30, 30);
 }
 
-
 .game {
     color: red;
-} */
+}
+*/
 
 /*=
                                                     2. LANDING PAGE 
@@ -935,13 +940,13 @@ width:100%;
 
     .hamburger {
         display: block;
-        margin-right: 0.25em;
     }
 
     .nav__ul.show {
         display: flex;
         padding: 0 0.5em 0.5em 0.5em;
         margin: 0;
+        background: var(--clr-header-and-cards);
     }
 
     #gallery {
@@ -952,9 +957,17 @@ width:100%;
         margin-top: 4em;
     }
 
+    .link-underline {
+        width: 100%;
+        text-align: center;
+    }
+
     .link-underline a {
         padding: 0;
-        margin: 0.5em;
+        margin: 0.25em;
+        background: rgba(25, 25, 25, 0.26);
+        width: 95%;
+        padding: 0.5em 0.25em;
     }
 
     .madlib-container {
