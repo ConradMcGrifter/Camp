@@ -102,7 +102,7 @@ nav {
 }
 
 .add-gallery {
-    display:none;
+    display: none;
 }
 
 .hamburger {
@@ -139,7 +139,6 @@ nav {
 }
 
 .reverse {
-    
     animation: rotateBack 0.6s, colorFadeBack 0.6s;
 }
 
@@ -157,7 +156,7 @@ nav {
         color: var(--clr-links);
     }
     to {
-        color:white;
+        color: white;
     }
 }
 
@@ -1325,7 +1324,7 @@ input:focus {
     }
 
     .add-gallery {
-        display:initial;
+        display: initial;
     }
 
     .hamburger {
@@ -1337,7 +1336,7 @@ input:focus {
         padding: 0 0.5em 0.5em 0.5em;
         margin: 0;
         background: var(--clr-header-and-cards);
-        animation: shortTransitionIn 0.5s;
+        /* animation: shortTransitionIn 0.5s; */
     }
 
     #gallery {
