@@ -1324,7 +1324,7 @@ input:focus {
         display: block;
     }
 
-    .nav__ul.show {
+    .show {
         display: flex;
         padding: 0 0.5em 0.5em 0.5em;
         margin: 0;
