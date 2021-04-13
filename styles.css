@@ -1317,7 +1317,7 @@ input:focus {
         width: 100%;
         flex-direction: column;
         padding: 0;
-        animation: shortTransitionIn 0.5s;
+        /* animation: shortTransitionIn 0.5s; */
     }
 
     .nav__ul a {
