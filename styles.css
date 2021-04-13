@@ -128,10 +128,15 @@ nav {
     width: 100%;
 }
 
-.hamburger.rotate {
+.rotate {
     transform: rotate(90deg);
     animation: rotate 0.6s, colorFade 0.6s;
     color: var(--clr-links);
+}
+
+.reverse {
+    
+    animation: rotateBack 0.6s, colorFadeBack 0.6s;
 }
 
 @keyframes colorFade {
@@ -140,6 +145,15 @@ nav {
     }
     to {
         color: var(--clr-links);
+    }
+}
+
+@keyframes colorFadeBack {
+    from {
+        color: var(--clr-links);
+    }
+    to {
+        color:white;
     }
 }
 
@@ -622,6 +636,16 @@ width:100%;
 
     to {
         transform: rotate(90deg);
+    }
+}
+
+@keyframes rotateBack {
+    from {
+        transform: rotate(90deg);
+    }
+
+    to {
+        transform: rotate(0deg);
     }
 }
 
