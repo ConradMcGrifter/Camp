@@ -101,6 +101,10 @@ nav {
     margin: 1em;
 }
 
+.add-gallery {
+    display:none;
+}
+
 .hamburger {
     background: transparent;
     border: none;
@@ -1318,6 +1322,10 @@ input:focus {
 
     .nav__ul a {
         font-size: 2rem;
+    }
+
+    .add-gallery {
+        display:initial;
     }
 
     .hamburger {
