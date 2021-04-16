@@ -833,6 +833,28 @@ width:100%;
     font-weight: bold;
 }
 
+/* close button for mmadlib */
+.close-inside {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    background: rgb(255, 81, 0);
+    border: solid rgb(219, 219, 219) 2px;
+    right: 0em;
+    top: 0em;
+
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+}
+
+.close-inside::after {
+    content: "X";
+    color: rgba(17, 17, 17, 0.75);
+    font-weight: bold;
+}
 /*=
                                                           5. MADLIB
                                                          =============*/
@@ -1657,3 +1679,5 @@ input:focus {
 .game__li {
     margin-top: 0.5em;
 }
+
+/* gridTest */
