@@ -450,7 +450,7 @@ width:100%;
     
 } */
 
-.gallery-body {
+/* .gallery-body {
     position: relative;
     top: 0;
     left: 0;
@@ -464,7 +464,7 @@ width:100%;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-}
+} */
 
 /* this wraps all the card divs */
 .card-wrapper {
@@ -930,7 +930,7 @@ input:focus {
     bottom: 0;
     right: 0;
     z-index: 999;
-    background: rgba(151, 151, 151, 1);
+    background: rgba(5, 23, 49, 0.788);
     animation: fadeIn 0.75s;
 }
 
