@@ -1448,7 +1448,7 @@ input:focus {
     }
     /* this makes the tall images bigger on click for mobile */
     .portfolio-lightbox__content img {
-        height: 550px;
+        height: 525px;
     }
 
     .portfolio-lightbox__content {
