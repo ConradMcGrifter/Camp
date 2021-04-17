@@ -1450,6 +1450,10 @@ input:focus {
     .portfolio-lightbox__content img {
         height: 550px;
     }
+
+    .portfolio-lightbox__content {
+        top: -10;
+    }
 }
 
 /* this is the media queries for iphone 6/7/8 */
