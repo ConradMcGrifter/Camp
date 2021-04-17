@@ -1446,12 +1446,16 @@ input:focus {
     .card {
         margin: 0.7em 0;
     }
+    /* this makes the tall images bigger on click for mobile */
+    .portfolio-lightbox__content img {
+        height: 550px;
+    }
 }
 
 /* this is the media queries for iphone 6/7/8 */
 @media only screen and (max-width: 375px) {
     .img-shrinker {
-        margin: 1em;
+        margin: 0.5em;
     }
     .img-shrinker .close {
         transition: ease 0.3s;
@@ -1561,6 +1565,7 @@ input:focus {
     .portfolio-lightbox__content {
         position: relative;
         max-width: 650px;
+        height: 550px;
     }
 }
 
@@ -1681,3 +1686,69 @@ input:focus {
 }
 
 /* gridTest */
+
+.grid-container {
+    margin: 2em auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 150px;
+    grid-auto-flow: dense;
+    grid-gap: 1em;
+}
+
+.grid-container img:hover {
+    filter: brightness(150%);
+}
+
+.grid-container img {
+    transition: 0.75s;
+}
+
+.grid-items {
+    background: lightblue;
+}
+
+.grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.long {
+    grid-row: span 2;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.stretch {
+    grid-column: span 2;
+}
+
+.grid-item15 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+@media only screen and (max-width: 950px) {
+    .grid-container {
+        margin: 5em auto;
+        width: 85%;
+
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows: 200px;
+    }
+
+    .big {
+        grid-column: initial;
+        grid-row: initial;
+    }
+
+    .grid-item15 {
+        grid-column: initial;
+        grid-row: initial;
+    }
+}
