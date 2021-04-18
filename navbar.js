@@ -24,11 +24,12 @@ function show() {
     // }
 
     if (!navUl.classList.contains("show")) {
-        navUl.classList.remove("hide");
+        navUl.style.transform = "translateY(0)";
         navUl.classList.add("show");
+        navUl.style.animation = "shortTransitionIn 0.5s";
     } else if (navUl.classList.contains("show")) {
         navUl.classList.remove("show");
-        navUl.classList.add("hide");
+        navUl.style.transform = "translateY(-20px)";
     }
 }
 
