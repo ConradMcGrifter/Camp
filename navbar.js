@@ -7,29 +7,19 @@ const showNav = document.getElementsByClassName("show");
 hamburger.addEventListener("click", show);
 
 function show() {
-    // navUl.classList.toggle("show");
-    // darken.classList.toggle("darken");
+    navUl.classList.toggle("show");
+    darken.classList.toggle("darken");
 
-    // if (navUl.classList.contains("show")) {
-    //     navUl.style.animation = "shortTransitionIn 0.5s";
-    // }
-
-    // if (!navUl.classList.contains("show")) {
-    //     navUl.style.animation = "shortTransitionOut 0.5s";
-    // }
-    // if (!navUl.classList.contains("show")) {
-    //     navUl.style.transform = "translateY(-20px)";
-    // } else if (navUl.classList.contains("show")) {
-    //     navUl.style.transform = "translateY(0px)";
-    // }
-
-    if (!navUl.classList.contains("show")) {
-        navUl.classList.remove("hide");
-        navUl.classList.add("show");
-    } else if (navUl.classList.contains("show")) {
-        navUl.classList.remove("show");
-        navUl.classList.add("hide");
+    if (navUl.classList.contains("show")) {
+        navUl.style.animation = "shortTransitionIn 0.5s";
+    }else if (!navUl.classList.contains("show")) {
+        navUl.style.animation = "";
     }
+   
+ 
+    // if (navUl.classList.contains("hide")) {
+    //     navUl.style.transform = "translateY(-20px)";
+    // }
 }
 
 //rotates the hamburger on click
