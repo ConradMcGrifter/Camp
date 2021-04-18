@@ -632,6 +632,18 @@ width:100%;
     }
 }
 
+@keyframes shortTransitionOut {
+    from {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    to {
+        opacity: 0.25;
+        transform: translateY(-20px);
+    }
+}
+
 @keyframes rotate {
     from {
         transform: rotate(0);
@@ -1338,7 +1350,6 @@ input:focus {
         width: 100%;
         flex-direction: column;
         padding: 0;
-        /* animation: shortTransitionIn 0.5s; */
     }
 
     .nav__ul a {
@@ -1358,7 +1369,6 @@ input:focus {
         padding: 0 0.5em 0.5em 0.5em;
         margin: 0;
         background: var(--clr-header-and-cards);
-        /* animation: shortTransitionIn 0.5s; */
     }
 
     #gallery {
